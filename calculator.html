@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            border:3px solid yellowgreen;
+            width:107px;
+            padding-left: 1px;
+            padding-right: 1px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            background-color: black;
+            transition: 0.5 ease;
+
+
+        }
+
+        .btn:hover{
+            background-color: rgb(81, 81, 228);
+        }
+#answer{width:95px;
+    background-color: yellowgreen;
+    color: black;
+
+
+}
+#clear{
+    width: 100px;
+}
+.btn{
+    border-radius: 20%;
+}
+    </style>
+</head>
+<body>
+    <form name="form" id="form">
+        <input type="text" name="answer" id="answer">
+        <br>
+        <br>
+
+        <input type="button" value="7" class='btn' onclick="form.answer.value += '7' ">
+        <input type="button" value="8" class='btn' onclick="form.answer.value += '8' ">
+        <input type="button" value="9" class='btn'onclick="form.answer.value += '9' ">
+        <input type="button" value="/"class='btn' onclick="form.answer.value += '/' ">
+        <br>
+        <br>
+        <input type="button" value="6" class='btn'onclick="form.answer.value += '6' ">
+        <input type="button" value="5" class='btn'onclick="form.answer.value += '5' ">
+        <input type="button" value="4" class='btn'onclick="form.answer.value += '4' ">
+        <input type="button" value="*"class='btn' onclick="form.answer.value += '*' ">
+<br>
+        <br>
+        <input type="button" value="3"class='btn' onclick="form.answer.value += '3' ">
+        <input type="button" value="2"class='btn' onclick="form.answer.value += '2' ">
+        <input type="button" value="1" class='btn'onclick="form.answer.value += '1' ">
+        <input type="button" value="-" class='btn'onclick="form.answer.value += '-' ">
+
+        <br>
+
+        <br>
+        <input type="button" value="0" class='btn'onclick="form.answer.value += '0' ">
+        <input type="button" value="." class='btn'onclick="form.answer.value += '.' ">
+        <input type="button" value="+" class='btn'onclick="form.answer.value += '+' ">
+        <input type="button" value="=" class='btn'onclick="form.answer.value = eval(form.answer.value) ">
+        
+        <br>
+        
+       
+        
+        <br>
+        <input type="button" id="clear" value="clear" onclick="form.answer.value += '' ">
+    </form>
+</body>
+</html>
